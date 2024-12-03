@@ -1,0 +1,793 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+.nav{
+    background-color: #FFFFFF;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+.nav .container h2 span{
+    color: red;
+}
+.nav .container ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav .container ul li a{
+    
+    text-decoration: none;
+    color: gray;
+    position: relative;
+}
+.nav .container ul li a::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: red;
+    transition: .4s;
+    
+}
+.nav .container ul li :hover::after{
+width: 100%;
+
+}
+.nav .container ul li a:hover{
+color: wheat;
+}
+.nav .container ul li:active{
+    border-bottom:2px solid green ;
+    text-decoration: underline;
+    opacity: 0.8;
+    position: relative;
+    margin: 0 1.6rem 0;
+    
+    
+}
+section:nth-child(old){
+    background-color: #DF6666;
+}
+section:nth-child(even){
+    background-color: aqua;
+}
+
+.nav i{
+   font-size: 20px; 
+}
+.nav input{
+    display: none;
+}
+ 
+
+.mainfood{background-color: #EEEEEE;
+margin-top: 50px;
+}
+.mainfood .container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mainfood .container .text-mainfood{
+    margin-top: 90px;
+    margin-bottom: 25px;
+    margin-right: 90px;
+    width: 50%;
+    
+}
+
+.mainfood .container .text-mainfood h2{
+    font-size: 64px;
+    font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    
+}
+.mainfood .container .text-mainfood p{
+    margin: 30px 0;
+    font-size: 16px;
+    color: black;
+}
+.mainfood .container .text-mainfood .btn-f-section{
+    display: flex;
+}
+.mainfood .container .text-mainfood .btn-f-section .booking-t{
+    padding: 30px 20px;
+    background-color: #DF6666;
+    color: white;
+    border-radius: 7vh;
+    text-decoration: none;
+
+}
+.mainfood .container .text-mainfood .btn-f-section .booking-t:hover{
+    color: white;
+background-color: red;
+}
+
+.mainfood .container .text-mainfood .btn-f-section .w-video{
+    text-decoration: none;
+    padding: 15px 20px;
+   
+
+}
+.mainfood .container .text-mainfood .btn-f-section .w-video .w-videos{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    
+}
+.mainfood .container .text-mainfood .btn-f-section .w-video .w-videos .circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 48%, rgba(2,0,36,0) 49%);    display: flex;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-right: 5px;
+}
+.mainfood .container .text-mainfood .btn-f-section .w-video .w-videos .circle i{
+padding: 10px;
+background-color: white;
+border-radius: 50%;
+
+}
+
+body:has(input[name="mode"]:checked).cheaf-teams .container .cheaf-name  .img-warraper svg path{
+background-color: #252525;
+}
+.mainfood .container .text-mainfood .btn-f-section .w-video a:hover{
+    color: red;
+}
+.mainfood .container .text-mainfood .btn-f-section .w-video .w-videos .circle:hover{
+    color: red;
+}
+.mainfood .container .text-mainfood .btn-f-section .w-video .mainvideo:hover{
+color: red;
+}
+.mainfood .container .img-mainfood{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    animation: 5s linear infinite;
+    /* box-shadow: 7px 1px 7px 1px rgba(0,0,0,1); */
+
+}
+@keyframes medo {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+} 
+
+.mainfood .container .img-mainfood:hover{
+    /* transform: scale(1) rotate(180deg) ;
+transition: 5s; */
+animation: medo 0.5s;
+animation-iteration-count: infinite;
+}
+/* /* .img-mainfood:hover {
+    animation:  0.2s;
+    animation-name: medo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} */
+
+
+
+.mainfood .container .img-mainfood img{
+width: 100%;
+}
+.cheaf-teams{
+    text-align: center;
+
+}
+.cheaf-teams  h2{
+    text-align: center;
+    padding: 25px 0;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 64px;
+}
+.cheaf-teams  h2 span{
+color: red;
+}
+.cheaf-teams .container{
+    display: flex;
+    overflow: hidden;
+}
+.cheaf-teams .container .cheaf-name img{
+    width: 100%;
+}
+.cheaf-teams .container .cheaf-name {
+    position: relative;
+    padding: 20px 25px;
+    width: 33.3%;
+    background-color: #FFFFFF;
+    margin: 50px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.cheaf-teams .container .cheaf-name  .img-warraper{
+    position: relative;
+}
+.cheaf-teams .container .cheaf-name  .img-warraper svg{
+position: absolute;
+left: 0;
+bottom: 0;
+right: 0;
+}
+
+.cheaf-teams .container .cheaf-name .img-warraper .tape-icon{
+width: fit-content;
+position: absolute;
+padding: 10px 10px;
+top: 1.875rem;
+right: -3.125rem;
+background-color: rgba(0,0,0,0.5);
+border-radius: 0.3125rem;
+color: white;
+opacity: 0;
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: start;
+transition: 0.5s;
+
+}
+.cheaf-teams .container .cheaf-name .img-warraper .tape-icon i{
+margin: 15px 0;
+}
+.cheaf-teams .container .cheaf-name .img-warraper .tape-icon a{
+color: white;
+}
+.cheaf-teams .container .cheaf-name:hover .img-warraper  .tape-icon{
+opacity: 1;
+top: 0;
+right: 0;
+
+}
+.cheaf-teams .container .cheaf-name  p{
+    text-align: center;
+    font-family: sans-serif;
+color: #252525;
+}
+.cheaf-teams .container .cheaf-name h2 {
+text-align: center;
+font-size: 32px;
+}
+.cheaf-teams .container .cheaf-name:hover {
+ transform: scale(1.1) ;
+transition: 2s; 
+text-align: center;
+}
+
+
+.food-menu {
+    background-color: #EEEEEE;
+}
+.food-menu h2{
+    text-align: center;
+    padding: 50px 0;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 64px;
+}
+.food-menu h2 span{
+    color: #DF6666;
+}
+
+.food-menu .container{
+    display: flex;
+}
+
+
+    .food-menu .container .f-menu {
+        display: grid;
+
+grid-template-areas: 
+"meal1 meal2 meal3"
+"meal4 meal2 meal5"
+"meal4 meal7 meal6"
+;
+gap:20px;
+    }
+.food-menu .f-menu > div{
+    border: 3px solid #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    font-family: sans-serif;
+
+}
+.food-menu .f-menu > div img{
+width: 100%;
+height: 100%;
+}
+.f-menu > div .layer{
+position: absolute;
+top: 100%;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0,0,0,0.5);
+transition: 0.5s;
+color: white;
+font-size: 24px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+opacity: 0;
+}
+
+.f-menu > div .layer p{
+color: #FFFFFF;
+
+}
+.f-menu > div .layer h2{
+    font-family: sans-serif;
+}
+
+ .f-menu > div:hover .layer{
+top : 0;
+opacity: 1;
+
+}
+
+.meal1{
+grid-area: meal1;
+}
+
+.meal2{
+    grid-area: meal2;
+
+}
+
+.meal3{
+    grid-area: meal3;
+
+}
+
+.meal4{
+    grid-area: meal4;
+
+}
+
+.meal5{
+    grid-area: meal5;
+
+}
+
+.meal6{
+    grid-area: meal6;
+
+}
+
+.meal7{
+    grid-area: meal7;
+
+}
+
+
+
+    .contact{
+        background-color: #FFFFFF;
+        padding: 50px 0;
+    }
+
+    .contact .uh span{
+        color: #DF6666;
+    }
+.contact .uh{
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 64px;
+}
+
+ .contact .container .location{
+    width: 100%;
+    border: 5px solid transparent;
+ }   
+ .contact .container .location iframe{
+width: 100%; 
+cursor: pointer;
+}
+.contact .container .contact-us{
+    display: flex;
+flex-wrap: wrap;
+margin: 55px 0;
+padding: 0 20px;
+width: 100%;
+}
+    .contact .container .contact-us .call-us{
+    padding: 20px 46px;
+    width: 46%;
+    text-align: start;
+    background-color: #F5F5F5;
+    border: 5px solid white;
+    margin: 12px 23px;
+    
+    }
+    .contact .container .contact-us .call-us h2 i{
+border-radius: 100%;
+background-color: red;
+margin: 0 3px;
+color: white;
+padding: 10px 10px;
+    }
+    .contact .container .contact-us .call-us h2 {
+        color: gray
+    ;
+    }
+    .contact .container .contact-us .call-us p {
+margin: 0 50px;
+    }
+    .contact .container .form{
+        width: 100%;
+        list-style: none;
+        padding: 30px 30px;
+        box-shadow: 7px 8px 5px 9px rgba(242,236,236,1);
+        -webkit-box-shadow: 7px 8px 5px 9px rgba(242,236,236,1);
+        -moz-box-shadow: 7px 8px 5px 9px rgba(242,236,236,1);
+        /* margin-bottom: 90px; */
+        }
+      
+        input:focus{
+            outline: 1px solid red ;
+        }
+
+    .contact .container .form .form0 {
+        display: flex;
+        width: 100%;
+        margin: 20px 0;
+
+    }
+    .contact .container .form .form0 .form1 {
+    width: 50%;
+    }
+    .contact .container .form .form1 input{
+        width: 98%;
+        padding: 20px 0;
+
+    }
+    .contact .container .form .form2{
+        margin: 20px 0;
+        resize: vertical;
+      
+    }
+        .contact .container .form .form2 input{
+            list-style: none;
+            width: 100%;
+            min-height: 100px;}
+            
+            .textarea :focus{
+                outline: 1px solid red;
+                
+            }
+            .contact .container .form .form21 input{
+                list-style: none;
+                width: 100%;
+                display: block;
+                padding: 20px 0;
+                }
+                .contact .container .form  .submit {
+display: flex; justify-content: center;}
+                .contact .container .form  .submit button{
+                    border-radius: 100vh; background-color: red; padding: 15px 50px; color: white; 
+                }
+                .contact .container .form  .submit button:hover{
+                    background-color: #DF6666;
+                }
+
+                .footer{
+                    background-color: #020202;
+                    background-image: url(../images/textured-metal-background.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    color: #fff;
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    
+                    
+                }
+                
+                .footer .mealify2{
+                    width: 32%;
+                    /* padding-left: 100px; */
+                    margin-top: 25px;
+                }
+                
+                .footer .mealify2 .mealify-img img{
+                    width: 100%;
+                }
+                
+                .footer .mealify2 .mealify-img {
+                    width: 10%;
+                    display: flex;
+                    align-items: center;
+                }
+                
+                .footer .mealify2 .mealify-img span{
+                    font-size: 30px;
+                    color: #CE1212;
+                }
+                
+                .footer .mealify2 .para{
+                    padding-top: 15px;
+                    width: 80%;
+                    color: white;
+                }
+                
+                .footer .mealify2 h3{
+                    text-align: center;
+                    margin: 20px 0;
+                }
+                
+                .footer .mealify2 .border{
+                    border-bottom: 1px solid #7f7f90;
+                    margin-right: 50px;
+                    padding-top: 10px;
+                }
+                
+                .footer .mealify2 .social-media{
+                    margin-top: 20px;
+                    padding-left: 50px;
+                }
+                
+                .footer .mealify2 .social-media ul a{
+                    color: #fff;
+                    padding-right: 50px;
+                }
+                
+                .footer .mealify3{
+                    margin-top: 25px;
+                    width: 45%;
+                }
+                
+                .footer .mealify3 p{
+                    margin-top: 15px;
+                    width: 95%;
+                    color: white;
+                }
+                
+                .footer .mealify3 .email{
+                    width: 70%;
+                    padding: 10px 8px;
+                    outline: none;
+                }
+                
+                .footer .mealify3 button{
+                    padding: 10px 10px;
+                    margin-top: 15px;
+                    margin-left: 2px;
+                    background-color: #CE1212;
+                    color: #fff;
+                    border: none;
+                    font-size: 15px;
+                }
+                body:has(input[name="mode"]:checked)                 .footer .mealify3 button{background-color: orange;}
+
+                body:has(input[name="mode"]:checked)  .footer .mealify3 button:hover{
+background-color: orange;
+                }
+                .footer .mealify3 button:hover{
+                    background-color: red;
+                    cursor: pointer;
+                } 
+                
+                .footer .mealify3 .icons {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                   
+                } 
+                .footer .mealify3 .icons .icons2 {
+width: 50%;
+margin: 10px 0;
+                }     
+                .footer .mealify3 .icons .icons2:hover {
+                animation: medo 5s ;
+                }
+                .footer .mealify3 h3{
+                    margin-top: 15px;
+                }
+                
+                .footer .mealify3 .icons{
+                    margin-top: 15px;
+                    display: flex ; flex-wrap: wrap; flex-direction: row;
+                
+                }
+
+                .footer .mealify3 .icons .icons2:hover {
+    
+      padding-left: 5px;
+               background-color: #252525;
+               opacity: 0.5;
+               color: white;
+              
+                }
+
+                
+
+                .footer .mealify3 .icons a{
+                    text-decoration: none;
+                    color: #fff;
+                    margin: 10px 5px;
+                }
+                .footer .mealify3 .icons .icons2{
+                    justify-content: space-between;
+                }
+                .footer .mealify3 .icons i{
+                    padding-right: 10px;
+                }
+                
+                .footer .mealify4{
+                    margin-top: 25px;
+                    /* padding-right: 90px; */
+                    width: 25%;
+                }
+                .footer .mealify4 .mealify4a {
+                    display: flex;
+                    margin: 20px 0;
+                }
+                .footer .mealify4 .mealify4a p{
+                    color: white;
+                    text-align: start;
+                }
+               
+                .footer .mealify4 i{
+                    color: #CE1212;
+                    font-size: 22px;
+                    padding-right: 10px;
+                    cursor: pointer;
+                }
+                body:has(input[name="mode"]:checked) .footer .mealify4 i{
+color: orange;}
+
+                .footer .mealify4 a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+
+
+                body:has(input[name="mode"]:checked) .nav .container ul li a:hover::after{
+    
+                    content: "";
+                    background-color: orange;
+                    transition: .4s;
+                } 
+                body:has(input[name="mode"]:checked) .mainfood{
+                    background-color: #252525;
+                    color: white;
+                }
+                body:has(input[name="mode"]:checked) .nav{
+                    background-color: #252525;
+                    color: white;
+                }
+                body:has(input[name="mode"]:checked) .nav ul li a{
+                    background-color: #252525;
+                    color:gray;
+                }
+                body:has(input[name="mode"]:checked) .nav ul li a:hover{
+                color: white;
+                }
+
+                body:has(input[name="mode"]:checked)  .mainfood .container .text-mainfood p{
+color: #fff;
+                }
+
+                body:has(input[name="mode"]:checked) .mainfood .container .text-mainfood .btn-f-section .booking-t{
+                    background-color: orange;
+                    }
+                
+                    body:has(input[name="mode"]:checked) .mainfood .container .text-mainfood .btn-f-section .w-video .w-videos .circle{
+                        color: orange;
+                        background-color: orange;
+                        }
+                
+                        body:has(input[name="mode"]:checked) .mainfood .container .text-mainfood .btn-f-section .w-video .w-videos{
+                            color: white;}
+                
+                        body:has(input[name="mode"]:checked) .mainfood .container .text-mainfood .btn-f-section .w-video .w-videos  a:hover{
+                           background-color: orange;
+                           color: orange;
+                            }
+                            body:has(input[name="mode"]:checked) .mainfood .container .text-mainfood .btn-f-section .w-video .w-videos:hover{
+                color: orange;
+                            }
+                body:has(input[name="mode"]:checked) .cheaf-teams{
+                    background-color: #252525;
+                    color: white;
+                }
+                body:has(input[name="mode"]:checked) .cheaf-teams .cheaf-name h2 {
+                color: white;
+                }
+                body:has(input[name="mode"]:checked) .cheaf-teams .cheaf-name p{
+                    color: orange;
+                    }
+                body:has(input[name="mode"]:checked) .cheaf-teams .cheaf-name {
+                    background-color: #252525;
+                    }
+                
+                body:has(input[name="mode"]:checked) .food-menu{
+                    background-color: #252525;
+                    color: white;}
+                
+                    body:has(input[name="mode"]:checked) .contact{
+                background-color: #252525;
+                color: white;
+                    }
+                    body:has(input[name="mode"]:checked) .contact .call-us{
+                background-color: #252525;
+                    }
+                    body:has(input[name="mode"]:checked) .contact .call-us i {
+                    background-color: orange;
+                    }
+                    body:has(input[name="mode"]:checked) .contact .call-us h2 , p {
+                        color: white;
+                        }
+                    body:has(input[name="mode"]:checked) .footer{
+                background-color: #252525;
+                color: white;
+                    }
+                
+                    body:has(input[name="mode"]:checked) .nav h2{
+                color: orange;
+                    }
+                     body:has(input[name="mode"]:checked).contact .container .form .form0 li{
+                background-color: #252525;
+                    } 
+                
+                     body:has(input[name="mode"]:checked) .contact .container .form  .submit button        {
+                background-color: orange;}  
+                
+                body:has(input[name="mode"]:checked) .contact .container .form  .submit button:hover       {
+                    background-color: rgba(255, 166, 0, 0.567);}
+                
+                
+                body:has(input[name="mode"]:checked) span{
+                color: orange;
+                }
+
+

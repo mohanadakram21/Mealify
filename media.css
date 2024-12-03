@@ -1,0 +1,96 @@
+@media screen and (min-width: 0px) and (max-width: 991px) {
+  .mainfood .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .mainfood .container .img-mainfood {
+    width: 80%;
+    text-align: center;
+  }
+  .mainfood .container .text-mainfood {
+    margin: 0 0;
+    width: 100%;
+    text-align: center;
+  }
+  .mainfood .container .text-mainfood .btn-f-section .booking-t {
+    padding: 20px 19px;
+    margin: 0 80px;
+  }
+  .mainfood .container .text-mainfood .btn-f-section .w-video {
+    padding: 20px 19px;
+    margin: 0 80px;
+  }
+  .mainfood .container .text-mainfood .btn-f-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 0 43px;
+  }
+  .cheaf-teams .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .cheaf-teams .container .cheaf-name {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .food-menu .container .f-menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contact .container .contact-us .call-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .contact .container .contact-us .call-us h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+  }
+
+
+
+
+
+
+
+
+
+  /* foooter */
+  .footer{
+    flex-wrap: wrap;
+  }
+  .footer .mealify2{
+    width: 100%;
+  }
+  .footer .mealify3 {
+    width: 100%;
+  }
+  .footer .mealify4{
+    width: 100%;
+  }
+  /* foooter */
+
+
+
+
+
+
+
+}
